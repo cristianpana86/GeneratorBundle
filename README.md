@@ -54,17 +54,6 @@ Documentation
 * better generated tests
 * fixtures generation
 
-
-License
--------
-
-PUGXGeneratorBundle is released under the LGPL license. See the [complete license text](Resources/meta/LICENSE).
-
-About
------
-
-PUGXGeneratorBundle is a [PUGX](https://github.com/PUGX) initiative.
-
 See also
 --------
 
