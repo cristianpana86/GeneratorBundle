@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Extension of PUGXSensioGeneratorBundle and SensioGeneratorBundle",
     "keywords": ["Symfony", "code generation"],
-    "homepage": "http://www.cpana.net",
+    "homepage": "https://github.com/cristianpana86/",
     "license": "LGPL-3.0+",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "sensio/generator-bundle": "~2.5"
+        "sensio/generator-bundle": ">=2.5"
     },
     "suggest": {
         "knplabs/knp-paginator-bundle": "Needed for optional pagination",
