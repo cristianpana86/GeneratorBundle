@@ -4,29 +4,30 @@ CPANAGeneratorBundle
 
 This bundle is an extension of [PUGXGeneratorBundle](https://github.com/PUGX/PUGXGeneratorBundle) which is a project improving [SensioGeneratorBundle](https://github.com/sensio/SensioGeneratorBundle).
 
-CPANAGeneratorBundle adds to the Show view the associated objects found in an ArrayCollection of the entity.
-Example: there are 2 entities: Author and Book found in One-to-Many  BIDIRECTIONAL relation. In Author entity there is a property called 'books' of type ArrayCollection. In the author/show view after the fields related to Author there will be listed the Books associated:
+**CPANAGeneratorBundle** adds to the **Show view** of an entity the associated objects from Bidirectional relations.  
+**Example:** there are 2 entities: Author and Book found in One-to-Many  **BIDIRECTIONAL** relation. In 'Author' entity there is a property called 'books' of type ArrayCollection. In the **author/show view** after the fields related to Author there will be listed the Books associated. Also CPANAGeneratorBundle is adding buttons for **Add book**, **view** and **edit**.
 
-Author
+**Author**   
 
-Last name: Herbert
-First name: Frank
-Nationality: American
-Id: 1
+Last name: Herbert     
+First name: Frank    
+Nationality: American   
+Id: 1    
 
-Books
-[Add book]
+**Books**    
+[Add book](www.newbook.com)   
 
-Title: Dune Chronicles
-Genre : Science Fiction
-Id:1
-[view][edit]
+Title: Dune Chronicles   
+Genre : Science Fiction    
+Id:1   
+[view](www.viewbook.com)[edit](www.editbook.com)    
 
-Title: Dune Mesiah
-Genre: Science Fiction
-Id: 2
-[view][edit]
+Title: Dune Mesiah    
+Genre: Science Fiction   
+Id: 2    
+[view](www.viewbook.com)[edit](www.editbook.com)   
 
+***
 PUGXGeneratorBundle adds many functionalities on top of SensioGeneratorBundle:
 
 * main block name customizable in layout
