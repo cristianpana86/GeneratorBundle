@@ -25,7 +25,7 @@ This document is an adaptation of the original documentation found on [PUGXGener
 Run composer to download the bundle:
 
 ``` bash
-$ php composer.phar require cpana/generator-bundle::dev-master
+$ php composer.phar require cpana/generator-bundle:dev-master
 ```
 
 Notice that if your composer.json requires "sensio/generator-bundle", you can delete it (since
