@@ -20,15 +20,21 @@ Id: 1
 Title: Dune Chronicles   
 Genre : Science Fiction    
 Id:1   
-[view](www.viewbook.com)[edit](www.editbook.com)    
+[view](www.viewbook.com) [edit](www.editbook.com)    
 
 Title: Dune Mesiah    
 Genre: Science Fiction   
 Id: 2    
-[view](www.viewbook.com)[edit](www.editbook.com)   
+[view](www.viewbook.com) [edit](www.editbook.com)   
 
 ***
-PUGXGeneratorBundle adds many functionalities on top of SensioGeneratorBundle:
+Documentation
+-------------
+
+[Read the documentation](Resources/doc/index.md)
+
+***
+**PUGXGeneratorBundle** adds many functionalities on top of SensioGeneratorBundle:
 
 * main block name customizable in layout
 * forms in correct namespace (under Type, not under Form)
@@ -48,15 +54,11 @@ PUGXGeneratorBundle adds many functionalities on top of SensioGeneratorBundle:
 * better generated tests
 * fixtures generation
 
-Documentation
--------------
-
-[Read the documentation](Resources/doc/index.md)
 
 License
 -------
 
-This bundle is released under the LGPL license. See the [complete license text](Resources/meta/LICENSE).
+PUGXGeneratorBundle is released under the LGPL license. See the [complete license text](Resources/meta/LICENSE).
 
 About
 -----
