@@ -1,0 +1,24 @@
+{
+    "name": "cpana/generator-bundle",
+    "type": "symfony-bundle",
+    "description": "Extension of PUGXSensioGeneratorBundle and SensioGeneratorBundle",
+    "keywords": ["Symfony", "code generation"],
+    "homepage": "http://www.cpana.net",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Cristian Pana",
+            "email": "cristianpana86@yahoo.com"  
+        }
+    ],
+    "require": {
+        "sensio/generator-bundle": "~2.5"
+    },
+    "suggest": {
+        "knplabs/knp-paginator-bundle": "Needed for optional pagination",
+        "lexik/form-filter-bundle": "Needed for optional filters"
+    },
+    "autoload": {
+        "psr-4": { "CPANA\\GeneratorBundle\\": "" }
+    }
+}
