@@ -2,11 +2,11 @@ CPANAGeneratorBundle Documentation
 =================================
 
 This version of the bundle requires Symfony 2.5 or newer.
-
+This document is an adaptation of the original documentation found on [PUGXGeneratorBundle](https://github.com/PUGX/PUGXGeneratorBundle/blob/master/Resources/doc/index.md) page
 
 ## Table of contents
 
-1. [Download PUGXGeneratorBundle](#1-download-pugxgeneratorbundle)
+1. [Download CPANAGeneratorBundle](#1-download-cpanageneratorbundle)
 2. [Enable the Bundle](#2-enable-the-bundle)
 3. [Usage](#3-usage)
 4. [Layout](#4-layout)
@@ -18,20 +18,19 @@ This version of the bundle requires Symfony 2.5 or newer.
 10. [Target bundle](#11-target-bundle)
 11. [Cleanup](#11-cleanup)
 
-### 1. Download PUGXGeneratorBundle
+### 1. Download CPANAGeneratorBundle
 
 **Using composer**
 
 Run composer to download the bundle:
 
 ``` bash
-$ php composer.phar require pugx/generator-bundle:2.4.* --dev
+$ php composer.phar require cpana/generator-bundle::dev-master
 ```
 
 Notice that if your composer.json requires "sensio/generator-bundle", you can delete it (since
-it is already required by "pugx/generator-bundle").
-If you are using Symfony 2.3 or Symfony 2.4, you must require 2.4.5 version. This is caused by a change
-in SesioGeneratorBundle.
+it is already required by "cpana/generator-bundle").
+
 
 ### 2. Enable the bundle
 
@@ -46,18 +45,18 @@ public function registerBundles()
     // ...
     if (in_array($this->getEnvironment(), array('dev', 'test'))) {
         // ...
-        $bundles[] = new PUGX\GeneratorBundle\PUGXGeneratorBundle();
+        $bundles[] = new CPANA\GeneratorBundle\CPANAGeneratorBundle();
     }
 }
 ```
 
 ### 3. Usage
 
-This bundle brings a new command, ``pugx:generate:crud``, that is similar to ``doctrine:generate:crud``.
+This bundle brings a new command, ``cpana:generate:crud``, that is similar to ``doctrine:generate:crud``.
 You can get help, like any other Symfony command, just typing
 
 ``` bash
-$ php app/console pugx:generate:crud --help
+$ php app/console cpana:generate:crud --help
 ```
 
 ### 4. Layout
@@ -250,7 +249,7 @@ As already mentioned in [filters section](#7-filters), if you run more than one 
 could be a good idea to refactor procteted methods in controllers to an abstract class, to avoid
 duplicate code.
 If you find yourself repeating generating many CRUDs, you can also copy templates from
-``skeleton`` directory (inside this bundle) to ``app\Resources\PUGXGeneratorBundle\skeleton``
+``skeleton`` directory (inside this bundle) to ``app\Resources\CPANAGeneratorBundle\skeleton``
 (in your project).
 
 Also, since it's not easy to always generate correct spaces, because they depend on dynamic names,
