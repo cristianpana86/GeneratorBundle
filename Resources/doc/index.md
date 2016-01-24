@@ -63,8 +63,7 @@ $ php app/console cpana:generate:crud --help
 
 This bundle is ready to be used with [Bootstrap](http://getbootstrap.com/) and
 with [Font Awesome](http://fortawesome.github.com/Font-Awesome/).
-Please note that current supported versions are Boostrap 3 and Font Awesome 4. If you use
-older versions, please use branch 2.3 of PUGXGeneratorBundle.
+Please note that current supported versions are Boostrap 3 and Font Awesome 4. 
 
 So, you can download Bootstrap and Font Awesome in your bundle, or use a CDN.
 Then, you can use a simple layout, like this one:
@@ -124,10 +123,10 @@ in [Symfony 2.6](https://github.com/symfony/symfony/blob/master/src/Symfony/Brid
 
 If you're using a previous Symfony version, you can copy the theme file in a location
 like ``src/AppBundle/Resources/views/Form/theme.html.twig``, then
-you can use the ``--theme`` option of ``pugx:generate:crud`` command, like in this example:
+you can use the ``--theme`` option of ``cpana:generate:crud`` command, like in this example:
 
 ``` bash
-$ php app/console pugx:generate:crud --entity=AppBundle:Entity \
+$ php app/console cpana:generate:crud --entity=AppBundle:Entity \
     --layout=AppBundle::layout.html.twig --theme=AppBundle:Form:theme.html.twig \
     --with-write
 ```
@@ -146,7 +145,7 @@ twig:
 
 You likely want to use pagination in your modules.
 If so, add [KnpPaginatorBundle](https://github.com/KnpLabs/KnpPaginatorBundle)
-to your bundles and use ``--use-paginator`` flag in ``pugx:generate:crud`` command.
+to your bundles and use ``--use-paginator`` flag in ``cpana:generate:crud`` command.
 
 ### 6. I18n
 
@@ -192,7 +191,7 @@ You are about to delete an item: Si sta per eliminare un elemento
 
 If you want to use filters (like the ones in the old symfony 1 admin generator), add
 [LexikFormFilterBundle](https://github.com/lexik/LexikFormFilterBundle) to your bundles.
-Then, use the ``--with-filter`` flag in ``pugx:generate:crud`` command.
+Then, use the ``--with-filter`` flag in ``cpana:generate:crud`` command.
 
 Since filters require some additional methods in generated controllers, moving them to
 a generic ``Controller`` class (and extending it instead of Symfony default one)
@@ -223,7 +222,7 @@ need to adapt field configuration by hand.
 
 ### 8. Sorting
 
-You can add sorting in columns, by using ``--with-sort`` flag in ``pugx:generate:crud`` command.
+You can add sorting in columns, by using ``--with-sort`` flag in ``cpana:generate:crud`` command.
 If you do so, instead of simple labels, table headers will contain links to toggle sorting
 ascending and descending.
 
@@ -240,7 +239,7 @@ If you want to generate your CRUD inside a bundle that is not the same bundle as
 entity, you can use the ``--dest`` option:
 
 ``` bash
-$ php app/console pugx:generate:crud --entity=AppBundle:Foo --dest=AcmeAnotherBundle
+$ php app/console cpana:generate:crud --entity=AppBundle:Foo --dest=AcmeAnotherBundle
 ```
 
 ### 11. Cleanup
